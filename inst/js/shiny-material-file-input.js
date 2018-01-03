@@ -7,7 +7,6 @@ $(document).ready(function () {
         },
         getValue: function (el) {
 
-            function () {
                 var file = el.files[0];
                 if (file) {
                     read = new FileReader();
@@ -15,7 +14,6 @@ $(document).ready(function () {
                 }
 
                 return read.result;
-            }
         },
         subscribe: function (el, callback) {
             $(el).on("change.shiny-material-file-input", function (e) {
